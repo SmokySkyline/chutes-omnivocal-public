@@ -1,0 +1,68 @@
+# Omnivocal Configuration Example
+# Copy this to ~/.config/omnivocal/config.toml and customize
+
+[chutes]
+# Your Chutes API key (required)
+api_key = ""
+
+# Chutes Whisper Large V3 endpoint
+endpoint = "https://chutes-whisper-large-v3.chutes.ai/transcribe"
+
+# Request timeout in seconds
+timeout_seconds = 30
+
+# Number of retry attempts for failed requests
+max_retries = 3
+
+[recording]
+# Audio sample rate (Hz) - Whisper works best with 16kHz
+sample_rate = 16000
+
+# Number of audio channels (1 = mono, 2 = stereo)
+channels = 1
+
+# Maximum recording duration in seconds
+max_seconds = 180
+
+# Audio format (currently only WAV is supported)
+format = "wav"
+
+# Temporary directory for audio files
+temp_dir = "/tmp/omnivocal"
+
+[vad]
+# Enable Voice Activity Detection (auto-stop on silence)
+enabled = false
+
+# Milliseconds of silence before stopping
+silence_ms_to_stop = 800
+
+# VAD aggressiveness (0-3, higher = more aggressive)
+aggressiveness = 2
+
+[clipboard]
+# Enable automatic clipboard integration
+enabled = true
+
+# Clipboard command (wl-copy for Wayland, xclip for X11)
+command = "wl-copy"
+
+[notifications]
+# Enable desktop notifications
+enabled = true
+
+# Notification command
+command = "notify-send"
+
+# Notification title
+title = "Omnivocal"
+
+[ui]
+# Show detailed segment information
+show_segments = false
+
+# Show timing information
+show_timing = false
+
+# Automatically copy transcription to clipboard
+auto_copy = true

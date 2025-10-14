@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "chutes-omnivocal-public"
+version = "0.1.0"
+description = "Wayland-friendly speech-to-text CLI powered by Chutes API"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Omnivocal Contributors"}
+]
+dependencies = [
+  "requests>=2.31",
+  "sounddevice>=0.4",
+  "numpy>=1.26",
+  "webrtcvad>=2.0.10",
+  "setuptools",  # Required by webrtcvad
+  "toml>=0.10",
+  "rich>=13.7"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "pytest-mock>=3.11",
+  "pytest-cov>=7.0",
+  "black>=24.0",
+  "mypy>=1.10"
+]
+
+[project.urls]
+Homepage = "https://github.com/SmokySkyline/chutes-omnivocal-public"
+Repository = "https://github.com/SmokySkyline/chutes-omnivocal-public"
+
+[project.scripts]
+ovstt = "omnivocal.cli:main"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
