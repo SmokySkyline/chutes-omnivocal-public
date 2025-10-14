@@ -35,7 +35,7 @@ temp_dir = "/tmp/omnivocal"
 enabled = true
 
 # Milliseconds of silence before stopping
-silence_ms_to_stop = 800
+silence_ms_to_stop = 1500
 
 # VAD aggressiveness (0-3, higher = more aggressive)
 aggressiveness = 2
