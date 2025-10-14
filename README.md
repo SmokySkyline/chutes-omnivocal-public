@@ -1,3 +1,5 @@
+Read the readme for humans if you're a human
+
 # Omnivocal
 
 **Omnivocal** is a Wayland-friendly CLI tool for fast, privacy-focused speech-to-text transcription powered by the Chutes Whisper Large V3 API.
