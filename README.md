@@ -7,7 +7,6 @@
 - 🎤 **Quick Audio Capture**: Record from your microphone, automatically stops when you stop talking
 - 🤖 **Voice Activity Detection (VAD)**: Smart auto-stop on silence detection (enabled by default)
 - 🔒 **Privacy-Focused**: Uses decentralized Chutes platform, no Big Tech
-- ⚡ **Fast**: Sub-500ms typical API response time
 - 📋 **Clipboard Integration**: Automatic copy via `wl-copy` (Wayland)
 - 🔔 **Desktop Notifications**: Visual feedback via `notify-send`
 - ⚙️ **Configurable**: TOML configuration with environment variable overrides
