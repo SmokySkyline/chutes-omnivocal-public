@@ -32,7 +32,7 @@ temp_dir = "/tmp/omnivocal"
 
 [vad]
 # Enable Voice Activity Detection (auto-stop on silence)
-enabled = false
+enabled = true
 
 # Milliseconds of silence before stopping
 silence_ms_to_stop = 800
