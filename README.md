@@ -1,5 +1,9 @@
 Read the readme for humans if you're a human
 
+Install for your user and bind the command to your keyboard in your wm
+eg. for Hyprland `bind = SUPER, O, exec, ~/.local/bin/ovstt once`
+or in the GUI's for KDE/Gnome
+
 # Omnivocal
 
 **Omnivocal** is a Wayland-friendly CLI tool for fast, privacy-focused speech-to-text transcription powered by the Chutes Whisper Large V3 API.
